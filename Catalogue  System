@@ -1,1 +1,55 @@
 # A Catalogue System for a store
+
+# A Catalogue System for a store
+
+class Books(object):
+    def __init__(self, name):
+      self.name = name
+      self.books = [] #List of all books available
+
+    def get_books(self): #Return list of books
+      return self.books
+    def add_book(self, newbook): #Add book to list of books
+      self.books.append(newbook)
+    def search_books(self, title="", author=None): #Search for book using title and author
+      listofMatches = []
+      if title != "":
+        for book in self.books:
+          if title.lower() in book.title.lower():
+            listofMatches.append(book)
+      else:
+        if author != None:
+          for book in self.books:
+            if book.author == author:
+              listofMatches.append(book)
+
+      return listofMatches
+
+
+
+class Author(object):
+  def __init__(self, name, nationality): #Create attributes for author
+    self.name = name
+    self.nationality = nationality
+    self.books = []
+
+  def __str__(self):
+    return self.name
+
+  def add_book(self, newbook):
+    self.books.append(newbook)
+
+  def get_books(self):
+    return self.books
+
+class Book(object):
+    def __init__(self, title, author): #Create attributes for book
+      self.title = title
+      self.author = author
+      self.author.add_book(self)
+
+    def __str__(self):
+      return "{} by {}".format(self.title, self.author)
+
+    def __repr__(self):
+      return "{} by {}".format(self.title, self.author)
