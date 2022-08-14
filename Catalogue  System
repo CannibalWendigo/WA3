@@ -1,13 +1,11 @@
 # A Catalogue System for a store
 
-# A Catalogue System for a store
-
 class Books(object):
     def __init__(self, name):
       self.name = name
       self.books = [] #List of all books available
 
-    def get_books(self): #Return list of books
+    def get_books(self): #Obtain list of books
       return self.books
     def add_book(self, newbook): #Add book to list of books
       self.books.append(newbook)
@@ -33,13 +31,13 @@ class Author(object):
     self.nationality = nationality
     self.books = []
 
-  def __str__(self):
+  def __str__(self): #Return name of author
     return self.name
 
-  def add_book(self, newbook):
+  def add_book(self, newbook): #Add book to list of books under author
     self.books.append(newbook)
 
-  def get_books(self):
+  def get_books(self): #Return list of books under author
     return self.books
 
 class Book(object):
@@ -48,8 +46,8 @@ class Book(object):
       self.author = author
       self.author.add_book(self)
 
-    def __str__(self):
+    def __str__(self): #Return information of book - informal)
       return "{} by {}".format(self.title, self.author)
 
-    def __repr__(self):
+    def __repr__(self): #Return information of book - formal)
       return "{} by {}".format(self.title, self.author)
