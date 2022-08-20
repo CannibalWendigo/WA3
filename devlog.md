@@ -19,6 +19,7 @@ Started on the code itself
 Added some comments, minor adjustments
 
 ## Week 8 (16 Aug - 22 Aug)
+Added category for food items
 
 ## Week 9 (23 Aug - 29 Aug)
 
