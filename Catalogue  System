@@ -51,3 +51,55 @@ class Book(object):
 
     def __repr__(self): #Return information of book - formal)
       return "{} by {}".format(self.title, self.author)
+
+
+class Foods(object):
+  def __init__(self, name):
+    self.name = name
+    self.food = [] #List of all foods available
+
+  def get_foods(self): #Obtain list of foods
+    return self.foods
+  def add_food(self, newfood): #Add food to list of foods
+    self.foods.append(newfood)
+  def search_foods(self, title="", brand=None): #Search for food using name and brand
+    listofMatches = []
+    if name != "":
+      for food in self.foods:
+        if name.lower() in food.name.lower():
+          listofMatches.append(food)
+    else:
+      if brand != None:
+        for food in self.foods:
+          if food.brand == brand:
+            listofMatches.append(food)
+
+      return listofMatches
+
+
+
+class Brand(object):
+  def __init__(self, name): #Create attributes for brand
+    self.name = name
+    self.foods = []
+
+  def __str__(self): #Return name of brand
+    return self.name
+
+  def add_foods(self, newbook): #Add food to list of foods under brand
+    self.foods.append(newfood)
+
+  def get_foods(self): #Return list of foods under brand
+    return self.foods
+
+class Food(object):
+    def __init__(self, name, brand): #Create attributes for food
+      self.name = name
+      self.brand = brand
+      self.brand.add_food(self)
+
+    def __str__(self): #Return information of food - informal)
+      return "{} by {}".format(self.name, self.brand)
+
+    def __repr__(self): #Return information of food - formal)
+      return "{} by {}".format(self.name, self.brand)
