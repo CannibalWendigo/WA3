@@ -16,6 +16,7 @@ Completed Proposal
 Started on the code itself
 
 ## Week 7 (9 Aug - 15 Aug)
+Added some comments, minor adjustments
 
 ## Week 8 (16 Aug - 22 Aug)
 
