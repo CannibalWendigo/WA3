@@ -1,0 +1,22 @@
+# A Catalogue System for a store (Main)
+
+def purchase(item):
+  if item.name in Books.name or item.name in Foods.name:
+    if item.quantity > 0:
+      item.quantity -= 1
+      print("You have purchased " + item.name + " successfully!")
+    else:
+      print("Sorry, " + item.name + " is currently out of stock. Please come again next week!")
+  else:
+    print("Please key in the correct item name.")
+  
+def check(item):
+  if item.name in Books.name or item.name in Foods.name:
+    if item.quantity == 0:
+      print("There are no " + item.name + " left.")
+    elif item.quantity == 1:
+      print("There is one " + item.name + " left.")
+    else:
+      print("There are " + item.quantity + item.name + " left.")
+  else:
+    print("Please key in the correct item name.")
