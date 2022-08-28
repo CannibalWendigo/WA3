@@ -22,6 +22,8 @@ Added some comments, minor adjustments
 Added category for food items
 
 ## Week 9 (23 Aug - 29 Aug)
+Sorted different classes into different files.
+Created function of purchase and check quantity.
 
 ## Week 10 (30 Aug - 5 Sep)
 
