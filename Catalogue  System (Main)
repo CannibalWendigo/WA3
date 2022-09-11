@@ -1,4 +1,4 @@
-# A Catalogue System for a store (Main)
+# A Catalogue System for a store
 
 items = [books + foods]
 
