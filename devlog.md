@@ -16,15 +16,19 @@ Completed Proposal
 Started on the code itself
 
 ## Week 7 (9 Aug - 15 Aug)
-Added some comments, minor adjustments
+Added some comments, minor adjustments to books section
 
 ## Week 8 (16 Aug - 22 Aug)
 Added category for food items
 
 ## Week 9 (23 Aug - 29 Aug)
-Sorted different classes into different files.
-Created function of purchase and check quantity.
+Added some comments, minor adjustments to foods section
 
 ## Week 10 (30 Aug - 5 Sep)
+Created function of purchase and check quantity.
 
 ## Sep Holiday (5 Sep - 10 Sep) **Submission date is 10 Sep**
+Finished up on project
+
+
+There were some things I did not manage to meet, such as storing various functions in seperate files, and adding a greater variety of objects.
